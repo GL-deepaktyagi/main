@@ -284,7 +284,7 @@ module Main
       end
 
       def main_env!
-        @main_env = Map.new
+        @main_env = SMap.new
 
         @main_env[:state]          = env['STATE']
         @main_env[:state_dirname]  = env['STATE_DIRNAME']
@@ -354,7 +354,7 @@ module Main
         unless defined?(@config)
           require 'yaml' unless defined?(YAML)
           if test(?s, config_path)
-            @config = Map.for(YAML.load(IO.read(config_path)))
+            @config = SMap.for(YAML.load(IO.read(config_path)))
           else
             config = args.last
             lines =
@@ -377,7 +377,7 @@ module Main
             end
             editor = ENV['EDITOR'] || ENV['EDIT'] || 'vi'
             system("#{ editor.inspect } #{ config_path }")
-            @config = Map.for(YAML.load(IO.read(config_path)))
+            @config = SMap.for(YAML.load(IO.read(config_path)))
           end
         end
         @config

@@ -61,7 +61,7 @@ Gem::Specification::new do |spec|
   
     spec.add_dependency(*["arrayfields", "~> 4.7", ">= 4.7.4"])
   
-    spec.add_dependency(*["map", "~> 6.1", ">= 6.1.0"])
+    # spec.add_dependency(*["map", "~> 6.1", ">= 6.1.0"])
   
 
   spec.extensions.push(*[])

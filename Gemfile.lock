@@ -1,0 +1,33 @@
+GIT
+  remote: https://github.com/GL-deepaktyagi/map
+  revision: 0a1dc834cf46b8ab8fd29af3e4fa8a54ea4c003a
+  specs:
+    map (6.6.0)
+
+PATH
+  remote: .
+  specs:
+    main (6.2.3)
+      arrayfields (~> 4.7, >= 4.7.4)
+      chronic (~> 0.6, >= 0.6.2)
+      fattr (~> 2.2, >= 2.2.0)
+
+GEM
+  remote: https://rubygems.org/
+  specs:
+    arrayfields (4.9.2)
+    bundle (0.0.1)
+      bundler
+    chronic (0.10.2)
+    fattr (2.4.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  bundle
+  main!
+  map!
+
+BUNDLED WITH
+   1.14.6
