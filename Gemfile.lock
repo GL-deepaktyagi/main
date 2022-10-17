@@ -16,8 +16,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     arrayfields (4.9.2)
-    bundle (0.0.1)
-      bundler
     chronic (0.10.2)
     fattr (2.4.0)
 
@@ -25,7 +23,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundle
   main!
   map!
 
